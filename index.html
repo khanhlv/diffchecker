@@ -7,7 +7,7 @@
 	<link rel="dns-prefetch" href="//www.googletagservices.com" />
 	<link rel="dns-prefetch" href="//www.googletagmanager.com" />
 	<link rel="dns-prefetch" href="//www.google-analytics.com" />
-	<link rel="canonical" href="https://jconv.codethoi.com/" />
+	<link rel="canonical" href="https://diffchecker.codethoi.com/" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Diffchecker is an online diff tool to compare text to find the difference between two text files">
 	<meta NAME="keywords" CONTENT="Diffchecker, diff tool, to compare text, to find the difference between two text files">
@@ -20,24 +20,22 @@
 	<link rel="stylesheet" href="assets/css/codemirror.css">
 	<meta name="google-site-verification" content="wo64O86TdUrMxfsofpwf5VlbUIjjvXHZzDY5abf0ts0" />
 	
-	<script src="assets/js/main.js"></script> 
 	<script src="assets/js/codemirror.js"></script> 
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/main.js"></script> 
 	<style>
-		#search_tags {
-		  list-style: none;
-		  margin: 0;
-		  padding: 0px;
-		  font-size: 10px;
-		  color: #888;
-		  text-align: center;
+		.bd-footer {
+			font-size: .875rem;
+			color: #63707c
 		}
-		#search_tags li {
-		  display: inline;
-		  padding: 0 4px;
-		  border-right: 1px solid #888;
+
+		.bd-footer a {
+			font-weight: 600;
+			color: #495057
 		}
-		#search_tags li a {
-			color: #888;
+
+		.bd-footer a:hover,.bd-footer a:focus {
+			color: #0d6efd
 		}
 		
 		.form-control {
@@ -49,6 +47,30 @@
 	</style>
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="#">
+		  <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-top"> Code Thối
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  <div class="navbar-nav">
+			<a class="nav-link" href="https://jsonformatter.codethoi.com">JSON Formatter</a>
+			<a class="nav-link" href="https://xmlformatter.codethoi.com">XML Formatter</a>
+			<a class="nav-link" href="https://htmlformatter.codethoi.com">HTML Formatter</a>
+			<a class="nav-link" href="https://jsformatter.codethoi.com">JS Formatter</a>
+			<a class="nav-link" href="https://cssformatter.codethoi.com">CSS Formatter</a>
+			<a class="nav-link" href="https://qrcode.codethoi.com">QR Code</a>
+			<a class="nav-link" href="https://diffchecker.codethoi.com">DiffChecker</a>
+			<a class="nav-link" href="https://jconv.codethoi.com">Unicode Convert</a>
+			<a class="nav-link" href="https://ruler.codethoi.com">Thước đo Online</a>
+			<a class="nav-link" href="https://codethoi.com">Blog</a>
+		  </div>
+		</div>
+	  </div>
+	</nav>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12" style="padding: 0px">
@@ -79,20 +101,22 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-md-12" style="padding: 0px; margin-bottom: 50px">
-				<ul id="search_tags">
-					<li><a href="https://codethoi.com" target="_blank" title="Code Thối | Blog">Code Thối</a></li>
-					<li><a href="https://cssformatter.codethoi.com" target="_blank" title="CSS Formatter & Beautifier Online">CSS Formatter & Beautifier Online</a></li>
-					<li><a href="https://xmlformatter.codethoi.com" target="_blank" title="XML Formatter & Beautifier Online">XML Formatter & Beautifier Online</a></li>
-					<li><a href="https://jsonformatter.codethoi.com" target="_blank" title="JSON Formatter & Beautifier Online">JSON Formatter & Beautifier Online</a></li>
-					<li><a href="https://htmlformatter.codethoi.com" target="_blank" title="HTML Formatter & Beautifier Online">HTML Formatter & Beautifier Online</a></li>
-					<li><a href="https://jsformatter.codethoi.com" target="_blank" title="JS (JavaScript) Formatter & Beautifier Online">JS (JavaScript) Formatter & Beautifier Online</a></li>
-					<li><a href="https://qrcode.codethoi.com" target="_blank" title="QR code generator">QR code Generator</a></li>
-					<li><a href="https://ruler.codethoi.com" target="_blank" title="Thước đo online">Thước đo online</a></li>
-					<li><a href="https://jconv.codethoi.com" target="_blank" title="Unicode Convert">Unicode Convert</a></li>
-				</ul>
-			</div>
+			
 		</div>
+	
 	</div>
+	
+	<footer class="bd-footer p-3 p-md-5 mt-5 bg-light text-center text-sm-start">
+	  <div class="container">
+		<ul class="bd-footer-links ps-0 mb-3">
+		  <li class="d-inline-block"><a href="https://github.com/twbs">GitHub</a> |</li>
+		  <li class="d-inline-block ms-3"><a href="https://twitter.com/getbootstrap">Twitter</a> |</li>
+		  <li class="d-inline-block ms-3"><a href="/docs/5.0/examples/">Examples</a></li>
+		</ul>
+		<p class="mb-0">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
+		<p class="mb-0">Currently v5.0.0-beta1. Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+	  </div>
+	</footer>
+
 </body>
 </html>
