@@ -22,7 +22,7 @@
 	
 	<script src="assets/js/codemirror.js"></script> 
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/main.js"></script> 
+	
 	<style>
 		.bd-footer {
 			font-size: .875rem;
@@ -42,7 +42,27 @@
 			border-radius: 0px;
 		}
 		
-		.CodeMirror { border: 1px solid #80e0bd; }
+		.CodeMirror { border: 1px solid #80e0bd; height: 450px;}
+		
+		.diff-line-insert {
+			background-color: #b5efdb;
+			transition: all 0.3s ease 0s;
+		}
+		
+		.diff-word-insert {
+			background-color: #29be8c;
+			transition: all 0.3s ease 0s;
+		}
+		
+		.diff-line-remove {
+			background-color: #ffc4c1;
+			transition: all 0.3s ease 0s;
+		}
+		
+		.diff-word-remove {
+			background-color: #ff5249;
+			transition: all 0.3s ease 0s;
+		}
 		
 	</style>
 </head>
@@ -80,14 +100,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6" style="padding: 0px">
-				<div class="form-group">
-					<label>Original Text</label>
+				<div class="form-group form-orginal">
+					<label><b>Original</b></label>
 					<textarea class="form-control" name="original" id="original" cols="45" rows="50"></textarea>
 				</div>
 			</div>
 			<div class="col-md-6" style="padding: 0px">
-				<div class="form-group">
-					<label>Changed Text</label>
+				<div class="form-group form-changed">
+					<label><b>Changed</b></label>
 					<textarea class="form-control" name="changed" id="changed" cols="45" rows="50"></textarea>
 				</div>
 			</div>
@@ -95,7 +115,8 @@
 		<div class="row">
 			<div class="col-md-12" style="padding: 0px">
 				<div class="form-group" style="text-align: center">
-					<input type="button" value="Find Difference" style="width: 150px" class="btn btn-success">
+					<input type="button" value="Find Difference" onclick="findDiff()" class="btn btn-success">
+					<input type="button" value="Clear" onclick="clearDiff()" class="btn btn-dark">
 				</div>
 			</div>
 		</div>
@@ -118,6 +139,6 @@
 		<p class="mb-0">© 2020 CodeThoi</p>
 	  </div>
 	</footer>
-
+	<script src="assets/js/main.js"></script> 
 </body>
 </html>
