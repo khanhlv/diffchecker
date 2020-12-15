@@ -1,3 +1,3 @@
-# XML Formatter - Beautifier
+# Difference Checker - Compare Online
 
-[XML Formatter - Beautifier](https://xmlformatter.codethoi.com)
+[Difference Checker - Compare Online](https://diffchecker.codethoi.com)
